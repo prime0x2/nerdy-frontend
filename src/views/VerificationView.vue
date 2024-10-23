@@ -14,7 +14,7 @@ const success = ref(false);
 
 onMounted(async () => {
   try {
-    const { data } = await axios.get('http://localhost:8080/api/auth/activate?token=' + query.token);
+    const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/auth/activate?token=${query.token}`);
 
     if (data.success) {
       success.value = true;

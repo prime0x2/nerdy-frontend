@@ -34,8 +34,10 @@ const loading = ref(false);
 const onSuccess: SubmissionHandler = async (values) => {
   loading.value = true;
 
+  console.log('env', import.meta.env.VITE_API_URL);
+
   try {
-    const { data } = await axios.post('http://localhost:8080/api/auth/login', values);
+    const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/auth/login`, values);
 
     if (data.success) {
       alert(data.message);

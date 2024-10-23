@@ -1,39 +1,37 @@
-# nerddevs-frontend
+# NerdDevs Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a task from NerdDevs
 
-## Recommended IDE Setup
+## Prerequisite
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Node <= 20.18.0
 
-## Type Support for `.vue` Imports in TS
+## Installation
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+1. Clone the repository
+   ```sh
+   git clone https://github.com/prime0x2/nerdy-frontend.git
+   ```
+2. Navigate to the project directory
+   ```sh
+   cd nerdy-frontend
+   ```
+3. Install dependencies
+   ```sh
+   npm i
+   ```
 
-## Customize configuration
+## Environment Setup
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+1. Setup `.env` file with the following environment variables:
+   ```sh
+   VITE_API_URL=http://localhost:8080/api
+   ```
 
-## Project Setup
+## Usage
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+1. Start the server
+   ```sh
+   npm run dev
+   ```
+2. The server will be running at `http://localhost:3000/`

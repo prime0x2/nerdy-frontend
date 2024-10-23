@@ -45,7 +45,7 @@ const onSuccess: SubmissionHandler = async (values) => {
   loading.value = true;
 
   try {
-    const { data } = await axios.post('http://localhost:8080/api/auth/register', values);
+    const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/auth/register`, values);
 
     if (data.success) {
       alert(data.message);
