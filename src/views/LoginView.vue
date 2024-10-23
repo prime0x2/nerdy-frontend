@@ -43,9 +43,7 @@ const onSuccess: SubmissionHandler = async (values) => {
       alert(data.message);
       resetForm();
 
-      setTimeout(() => {
-        router.push({ name: 'another' });
-      }, 3000);
+      router.push({ name: 'another' });
     }
   } catch (error) {
     if (error instanceof AxiosError) {
