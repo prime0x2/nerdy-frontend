@@ -106,7 +106,7 @@ const onSubmit = handleSubmit(onSuccess, onInvalidSubmit);
             :disabled="loading"
             class="mt-5 h-10 w-full rounded bg-blue-500 text-white hover:bg-blue-600 focus:outline-none disabled:opacity-60"
           >
-            Sign Up
+            Sign In
           </button>
 
           <nav class="mt-5 text-center text-sm text-gray-500">
